@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2e2e2e;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hoşgeldiniz, [Kullanıcı Adı]!</h2>
+        <p>Burada kişisel bilgilerinizi ve ayarlarınızı yönetebilirsiniz.</p>
+        <!-- Buraya kullanıcı bilgileri ve diğer içerikler eklenebilir -->
+        <button class="button" onclick="logout()">Çıkış Yap</button>
+    </div>
+    <script>
+        function logout() {
+            // Çıkış işlemi yapılabilir, örneğin, çerezleri temizleme veya yönlendirme
+            window.location.href = 'login.html'; // Çıkış yaptıktan sonra giriş sayfasına yönlendirme
+        }
+    </script>
+</body>
+</html>
